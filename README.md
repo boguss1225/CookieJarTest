@@ -1,13 +1,14 @@
 # CookieJarTest
-Cognitive test which is for diagnosing dementia.\
+Cognitive test which is for diagnosing dementia.
 
-screenshot of the initial screen\
-![picture](https://github.com/CookieJarTest/blob/master/assets/screenshot1.PNG)\
-screenshot of the recording(testing) screen\
-![picture](https://github.com/CookieJarTest/blob/master/assets/screenshot2.PNG)\
+* screenshot of the initial screen\
+![picture](https://github.com/CookieJarTest/blob/master/assets/screenshot1.PNG)
+* screenshot of the recording(testing) screen\
+![picture](https://github.com/CookieJarTest/blob/master/assets/screenshot2.PNG)
 
-#Description
-![picture](https://github.com/CookieJarTest/blob/master/assets/testimage1.PNG)
+# Description
+
+![picture](https://github.com/CookieJarTest/blob/master/assets/testimage1.PNG)\
 Participants are shown a complex image and asked to verbally describe it. \
 The image is the ‘Cookie Theft’ picture from the Boston Diagnostic Aphasia Examination.\
 This image conveys a complex scene with interacting objects. \

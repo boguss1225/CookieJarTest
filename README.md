@@ -1,5 +1,6 @@
 # CookieJarTest
-Cognitive test which is for diagnosing dementia.
+Cognitive test which is for diagnosing dementia.\
+https://boguss1225.github.io/CookieJarTest/
 
 * screenshot of the initial screen\
 ![picture](https://github.com/boguss1225/CookieJarTest/blob/master/assets/screenshot1.PNG)

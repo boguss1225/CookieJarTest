@@ -80,7 +80,16 @@ function handlerFunction(stream) {
             recordedAudio.src = URL.createObjectURL(blob);
             recordedAudio.controls=true;
             recordedAudio.autoplay=false;
-            sendData(blob)
+            //sendData(blob)
+
+			//uploading 
+			var filename =new Date().getTime()
+			
+		  	var xhr=new XMLHttpRequest();
+		  	var fd=new FormData();
+		  	fd.append("file",blob, filename+".wav");
+		  	xhr.open("POST","upload.php",true);
+		 	xhr.send(fd);
         }
     }
 }
@@ -151,11 +160,12 @@ stop_recording.onclick = e => {
     	
     	//save recording file
     	// [please insert 'saving record file code' here]
-    	
+	/*
     	//save json file (time record)
     	var timelog = {start: start_time, stop : new Date() };
     	JsonFilename = "timelog.json";
     	saveData(timelog, JsonFilename);
+	*/
 	}
 }
 

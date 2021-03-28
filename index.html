@@ -14,13 +14,14 @@
 			<div class="padding_wrapper_for_footer">
 				<nav class="navbar navbar-dark">
 					<!-- Navbar content -->
-					<a class="navbar-brand" href="https://www.utas.edu.au/">
+					<a class="navbar-brand" href="https://www.utas.edu.au/" style="padding:15px">
 						<img src="./assets/utas_logo.jpg" class="brand-logo" alt="logo of University of Tasmania">
 					</a>
 
-					<div id="state">
+					<div id="state" style="padding:15px">
 						
-						<button class='btn state btn-outline-primary' type='button' onclick='show_sign_in()'>Log in</button>
+						<button class='btn state btn-outline-primary' type='button' onclick='show_sign_in()'>Log in</button><br><br><br>
+						<a class="btn state btn-outline-secondary" href="http://www.speech2text.link/" role="button">Speech To Text</a>
 					   
 					</div>
 				</nav>
@@ -51,6 +52,7 @@
 								<h4>Please press the "Start recording" button when you ready.</h4>
 							  	<br />
 								<button class="btn btn-primary" id="start_recording">Start Recording</button>
+							
 						  	</div>
 
 							<div id="record_view">
@@ -62,8 +64,8 @@
 							
 							<div id="result_view">
 								<h5 id="finish_label">Recording finished!</h5><br />
-								<a id="downloadLink" href=""> [download mp3] </a><br />
-								<audio id=recordedAudio></audio><br />
+								<!--<a id="downloadLink" href=""> [download mp3] </a><br /> -->
+								<audio id=recordedAudio></audio><br/><br/>
 								<button class="btn btn-danger" id="re_recording">Record Again</button>
 								<button class="btn btn-primary" id="next">Go to Next</button>
 							</div>

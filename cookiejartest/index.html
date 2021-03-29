@@ -1,0 +1,109 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/base.css" >
+		<link rel="stylesheet" type="text/css" href="./assets/smart_wizard_theme_dots.min.css"/>
+		<link rel="stylesheet" href="./RT.css" >
+	</head>
+
+    <body>
+		<div class="content">
+			<!-- Navigation -->
+			<div class="padding_wrapper_for_footer">
+				<nav class="navbar navbar-dark">
+					<!-- Navbar content -->
+					<a class="navbar-brand" href="https://www.utas.edu.au/" style="padding:15px">
+						<img src="./assets/utas_logo.jpg" class="brand-logo" alt="logo of University of Tasmania">
+					</a>
+
+					<div id="state" style="padding:15px">
+						<!-- Login Button (currently disabled)-->
+						<!--
+						<button class='btn state btn-outline-primary' type='button' onclick='show_sign_in()' style="margin-left:10px;">Log in</button>
+						-->
+
+						<!-- Speech to text Link Button -->
+						<a class="btn state btn-outline-secondary" href="http://www.speech2text.link/" role="button">Speech To Text</a>
+					</div>
+				</nav>
+				
+				<div class="main mx-3">
+					<!--Task list-->
+					<div class="shadow p-3 mb-5 rounded">
+						<div id="smartwizard" class="step-anchor sw-main sw-theme-dots">
+							<ul class="nav nav-tabs step-anchor">
+								<li class="nav-item done"><a href="" class="nav-link">Step 1<br /><small>Cookie jar Test</small></a></li>
+								<li class="nav-item active"><a href="" class="nav-link">Step 2<br /><small>Next Test</small></a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Step 3<br /><small>Next Test</small></a></li>	
+							</ul>
+						</div>
+					</div>
+					
+					<!-- Write your code from here -->
+					
+					<div>
+						<center style="margin-bottom: 100px;">
+							<h2 id="title_head">Picture description (PD) test</h2>
+							<div id="description"> 
+								<br />
+								<h4>In this test, the ‘Cookie Theft’ picture from the Boston Diagnostic Aphasia Examination will be displayed.</h4>
+									<h4>  1. In your own words, describe what you see in the most detail you can.</h4>
+									<h4>  2. Try to talk for at least 1 minute. </h4>
+									<h4>  3. When done, press "Stop recording", and then "Submit”</h4>
+								<h4>Please press the "Start recording" button when you ready.</h4>
+							  	<br />
+								<button class="btn btn-primary" id="start_recording">Start Recording</button>
+							
+						  	</div>
+
+							<div id="record_view">
+								<img class="center-fit" id="testimage" src="assets/testimage1.PNG">
+								<div id='progressbar1'></div>
+								<button class="Rec" id="in_recording">Recording</button>
+								<button class="btn btn-danger" id="stop_recording">Stop Recording</button>	<br />
+							</div>
+							
+							<div id="result_view">
+								<h5 id="finish_label">Recording finished!</h5><br />
+								<!--<a id="downloadLink" href=""> [download mp3] </a><br /> -->
+								<audio id=recordedAudio></audio><br/><br/>
+								<button class="btn btn-danger" id="re_recording">Record Again</button>
+								<button class="btn btn-primary" id="next">Go to Next</button>
+							</div>
+						</center>
+					</div>	
+					<!-- Your code end here -->
+				</div>
+			</div>
+			
+			<!--footer-->
+			<footer id="footer" class="page-footer shadow-none bg-light font-small">
+				<div class="container text-center py-3">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="#">About</a>
+						</div>
+						<div class="col-md-4">
+							<a href="https://www.utas.edu.au/copyright-statement">Copyright</a>
+						</div>
+						<div class="col-md-4">
+							<a href="mailto:yinzix@utas.edu.au">Contact</a>
+						</div>
+					</div>
+					<!-- Copyright -->
+					<!--<div class="footer-copyright text-center py-1">© 2020 Copyright</div>-->
+				</div>
+			</footer>
+        </div>
+		
+        <div>
+            <script src="./assets/jquery-3.4.1.min.js" ></script>
+			<script src="https://www.jquery-az.com/bootstrap-theme/wow-carousel-slider/js/wow.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			<script src="./RT.js" ></script>
+		</div>
+    </body>
+</html>

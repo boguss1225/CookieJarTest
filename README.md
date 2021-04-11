@@ -3,13 +3,13 @@ Cognitive test which is for diagnosing dementia.\
 https://boguss1225.github.io/CookieJarTest/
 
 * screenshot of the initial screen\
-![picture](https://github.com/boguss1225/CookieJarTest/blob/master/assets/screenshot1.PNG)
+![picture](https://github.com/boguss1225/CookieJarTest/tree/master/cookiejartest/assets/screenshot1.PNG)
 * screenshot of the recording(testing) screen\
-![picture](https://github.com/boguss1225/CookieJarTest/blob/master/assets/screenshot2.PNG)
+![picture](https://github.com/boguss1225/CookieJarTest/tree/master/cookiejartest/assets/screenshot2.PNG)
 
 # Description
 
-![picture](https://github.com/boguss1225/CookieJarTest/blob/master/assets/testimage1.PNG)\
+![picture](https://github.com/boguss1225/CookieJarTest/tree/master/cookiejartest/assets/testimage1.PNG)\
 Participants are shown a complex image and asked to verbally describe it. \
 The image is the ‘Cookie Theft’ picture from the Boston Diagnostic Aphasia Examination.\
 This image conveys a complex scene with interacting objects. \

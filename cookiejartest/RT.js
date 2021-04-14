@@ -1,3 +1,36 @@
+/*
+* Copyright 2020 The Dementia Data Collection project Authors. All Rights Reserved.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+* ==========================================================================
+*
+* This file is part of Dementia Data Collection project.
+*
+* Made in University of Tasmania, Australia.
+*
+* @Authors : Dr.Mira Park (mira.park@utas.edu.au)
+*			 Heemoon Yoon (boguss1225@gmail.com)
+*			 XiaoXiang Wang (lance.wang26@gmail.com)
+*
+* Date : Initial Development in 2020 
+*
+* For the latest version, please check the github 
+* (https://github.com/boguss1225/CookieJarTest)
+* 
+* ==========================================================================
+* Description : This program records user voice and saves as wav file in server side.
+*/
+
 //"use strict";
 const nav_view = document.getElementsByClassName("navbar navbar-dark")[0];
 const nav_view2 = document.getElementsByClassName("shadow p-3 mb-5 rounded")[0];
@@ -76,18 +109,18 @@ function handlerFunction(stream) {
     rec.ondataavailable = e => {
     	audioChunks.push(e.data);
     	if (rec.state == "inactive"){
-            let blob = new Blob(audioChunks,{type:'audio/mpeg-3'});
+            let blob = new Blob(audioChunks,{type:'audio/wav'});
             recordedAudio.src = URL.createObjectURL(blob);
             recordedAudio.controls=true;
             recordedAudio.autoplay=false;
             //sendData(blob)
 
 			//uploading 
-			var filename =new Date().getTime()
+			//var filename =new Date();
 			
 		  	var xhr=new XMLHttpRequest();
 		  	var fd=new FormData();
-		  	fd.append("file",blob, filename+".wav");
+		  	fd.append("file",blob);
 		  	xhr.open("POST","upload.php",true);
 		 	xhr.send(fd);
         }
@@ -103,7 +136,6 @@ function timeunder_warining_msg(){
 }
 
 function sendData(data) {
-	//get username? - to specifiy the tester
 	//get test time
 	var filename = 'acetest.mp3';
 	//make file name
@@ -157,16 +189,7 @@ stop_recording.onclick = e => {
 		console.log("stop_recording");
     	//stop record
     	rec.stop();
-    	
-    	//save recording file
-    	// [please insert 'saving record file code' here]
-	/*
-    	//save json file (time record)
-    	var timelog = {start: start_time, stop : new Date() };
-    	JsonFilename = "timelog.json";
-    	saveData(timelog, JsonFilename);
-	*/
-	}
+    }
 }
 
 function createProgressbar(id, duration, callback) {

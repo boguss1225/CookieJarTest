@@ -1,3 +1,6 @@
+._*
+.DS_*
+
 # Object file
 *.o
 
